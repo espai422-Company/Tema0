@@ -1,13 +1,17 @@
-/*
-A aquest programa hem de definir dos nombre enters amb el valor que vulgueu
-vosaltres. Per pantalla hem de mostrar la suma, la resta la multiplicació i la divisió
-d'aquests dos nombres. (Una línia per cada resultat.)
-*/
-
 import java.util.Scanner;
 
+/**
+ * <h1>Exercici 1</h1>
+ * <p>
+ * A aquesta activitat hem de dissenyar un programa que et faci la mitjana de les notes
+ * d'un alumne, per a això el programa t'ha de sol·licitar el nom de l'alumne i les notes
+ * de les 3 avaluacions per pantalla i mostrar el resultat final.
+ * </p>
+ */
+
+
 public class Exercici1 {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         // Demana els nombres enters
