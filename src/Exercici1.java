@@ -22,16 +22,19 @@ public class Exercici1 {
         System.out.println("La suma de " + a + " i " + b + " és " + (a + b));
         System.out.println("La resta de " + a + " i " + b + " és " + (a - b));
         System.out.println("La multiplicació de " + a + " i " + b + " és " + (a * b));
+        // divisió entera
         System.out.println("La divisió de " + a + " i " + b + " és " + (a / b));
 
     }
 
     // Demana un nombre enter per la terminal fins que aquest compleix amb el format
     private static int readInt(String msg) {
-        System.out.println("Introdueix un nombre enter: ");
+        System.out.println(msg);
+
         try {
             return scanner.nextInt();
         } catch (Exception e) {
+            scanner.next(); // buidar el buffer
             return readInt(msg);
         }
     }

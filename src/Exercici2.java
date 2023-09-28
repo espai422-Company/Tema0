@@ -29,6 +29,7 @@ public class Exercici2 {
         try {
             return scanner.nextDouble();
         } catch (Exception e) {
+            scanner.next();
             return readDouble(msg);
         }
     }
